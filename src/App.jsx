@@ -8,8 +8,7 @@ function App() {
     { id: 'overview', label: 'Overview' },
     { id: 'results', label: 'Latest Results' },
     { id: 'fixtures', label: 'Upcoming Fixtures' },
-    { id: 'tips', label: 'Tips & Advice' },
-    { id: 'ellie', label: 'F. P. Ellie' }
+    { id: 'tips', label: 'Tips & Advice' }
   ]
 
   return (
@@ -38,7 +37,6 @@ function App() {
         {activeTab === 'results' && <ResultsTab />}
         {activeTab === 'fixtures' && <FixturesTab />}
         {activeTab === 'tips' && <TipsTab />}
-        {activeTab === 'ellie' && <EllieTab />}
       </main>
     </div>
   )
@@ -213,43 +211,6 @@ function TipsTab() {
             <li><strong>Haaland (C)</strong> - Differential, due a haul</li>
             <li><strong>Palmer (C)</strong> - Form player, on set pieces</li>
           </ol>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-function EllieTab() {
-  return (
-    <div className="tab-content ellie-tab">
-      <h2>F. P. Ellie - Your AI Assistant</h2>
-      <div className="ellie-container">
-        <div className="ellie-intro">
-          <div className="ellie-avatar">🤖</div>
-          <p className="ellie-description">
-            Hi! I'm F. P. Ellie, your Fantasy Premier League AI assistant.
-            I can help you with team selection, transfer advice, captain picks, and more!
-          </p>
-        </div>
-
-        <div className="agent-placeholder">
-          <p className="placeholder-text">
-            Relevance AI Agent will be embedded here
-          </p>
-          <p className="placeholder-subtext">
-            This is where your interactive chat with Ellie will appear
-          </p>
-        </div>
-
-        <div className="ellie-features">
-          <h3>What I can help you with:</h3>
-          <ul>
-            <li>🎯 Personalized team advice</li>
-            <li>📈 Transfer suggestions based on form and fixtures</li>
-            <li>⚡ Captain recommendations</li>
-            <li>🔍 Player comparison and statistics</li>
-            <li>💰 Budget optimization strategies</li>
-          </ul>
         </div>
       </div>
     </div>
